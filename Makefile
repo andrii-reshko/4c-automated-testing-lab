@@ -1,7 +1,11 @@
-.PHONY: test test-watch cover lint lint-fix format format-check
+.PHONY: test test-verbose test-watch cover lint lint-fix format format-check
+.DEFAULT_GOAL=test
 
 test:
 	npm test
+
+test-verbose:
+	npm run test-verbose
 
 cover:
 	npm run coverage

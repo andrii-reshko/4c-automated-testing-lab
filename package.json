@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "vitest",
+    "test-verbose": "vitest run --reporter=verbose",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "coverage": "vitest run --coverage",
